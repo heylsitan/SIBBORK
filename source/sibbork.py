@@ -1,4 +1,23 @@
 """
+ SIBBORK is an individual-based spatially-explicit gap dynamics model for simulation of forests, here specifically tailored to boreal forests in Siberia.
+    Copyright (C) 2015  Ksenia Brazhnik
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License along
+    with this program; if not, write to the Free Software Foundation, Inc.,
+    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+"""
+
+"""
 Import all the necessary libraries and tools for the model.
 """
 import numpy as np
@@ -9,7 +28,6 @@ from load_driver import load_driver_py
 from LightSubroutine import build_arrows_list, prepare_actual_leaf_area_mat_from_dem, build_arrows_list_independent
 from read_in_ascii import read_in_ascii, read_in_ascii_attributes
 from light3d import compute_3D_light_matrix
-import pandas as pd
 import h5py
 import dill
 # Select either the realu numba (could be buggy)
