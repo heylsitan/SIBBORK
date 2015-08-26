@@ -27,7 +27,8 @@ ext_options = {
                "sources": ["light3d.pyx"],
                }
 
-extmodule = Extension("light3d", **ext_options)
+extmodule = Extension("light3d",["light3d.pyx"],include_dirs=["/Applications/Canopy.app/appdata/canopy-1.5.5.3123.macosx-x86_64/Canopy.app/Contents/lib/python2.7/site-packages/numpy/core/include/"])
+#extmodule = Extension("light3d", **ext_options,include_dirs=["/Applications/Canopy.app/appdata/canopy-1.5.5.3123.macosx-x86_64/Canopy.app/Contents/lib/python2.7/site-packages/numpy/core/include/"])
 # Building
 setup(
     name = 'light3d',
